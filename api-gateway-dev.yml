@@ -1,0 +1,14 @@
+zuul:
+  sensitive-headers: 
+  routes:
+    product: /product/**
+    user: /user/**
+    system: /system/**
+    blog: /blog/**
+    order: /order/**
+management:
+  security:
+    enabled: false    
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000
